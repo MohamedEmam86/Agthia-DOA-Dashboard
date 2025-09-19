@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agthia Group - Delegation of Authority Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://lindy.nyc3.digitaloceanspaces.com/user-content/prod/owners/68ccb3facb345318b43b49b7/attachments/e3abef03-abb8-4acb-827b-1ad125746fbd-Agthia%20Logo.jpeg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://lindy.nyc3.digitaloceanspaces.com/user-content/prod/owners/68ccb3facb345318b43b49b7/attachments/e3abef03-abb8-4acb-827b-1ad125746fbd-Agthia%20Logo.jpeg" alt="Agthia Group" class="logo">
+                    <div class="logo-text">
+                        <h1>Delegation of Authority</h1>
+                        <p>Interactive Dashboard</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search activities, roles, or thresholds..." class="search-input">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Stats Overview -->
+            <section class="stats-section">
+                <div id="statsOverview" class="stats-grid">
+                    <!-- Stats will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Functions Grid -->
+            <section class="functions-section">
+                <h2 class="section-title">Business Functions</h2>
+                <div id="functionsGrid" class="functions-grid">
+                    <!-- Function cards will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Enhanced Collapsible Abbreviations Section -->
+            <section class="abbreviations-section">
+                <button id="abbreviationsToggle" class="abbreviations-toggle" onclick="dashboard.toggleAbbreviations()">
+                    📚 Role Abbreviations Reference <span class="toggle-icon">▶</span>
+                </button>
+                <div id="abbreviationsGrid" class="abbreviations-grid collapsed">
+                    <!-- Abbreviations will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Function Modal -->
+    <div id="functionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <span id="modalIcon" class="modal-icon">🏛️</span>
+                    <h2 id="modalTitle">Function Name</h2>
+                </div>
+                <button class="close-btn" onclick="dashboard.closeModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="search-section">
+                    <p class="modal-description">Select an activity to view its threshold-based workflow requirements</p>
+                </div>
+                <div id="activitiesList" class="activities-list">
+                    <!-- Activities will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity Detail Modal -->
+    <div id="activityModal" class="modal">
+        <div class="modal-content activity-modal-content">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <button class="back-btn" onclick="dashboard.goBackToFunction()">← Back</button>
+                    <h2 id="activityModalTitle">Activity Name</h2>
+                </div>
+                <button class="close-btn" onclick="dashboard.closeModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div id="activityDetail" class="activity-detail">
+                    <!-- Activity details will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Agthia Group</h4>
+                    <p>Delegation of Authority Dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Stats</h4>
+                    <p>6 Business Functions • 89+ Activities • 89+ Role Abbreviations</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enhanced Features</h4>
+                    <p>✅ Segregated Thresholds • ✅ Collapsible Abbreviations • ✅ Interactive Workflows</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Agthia Group. All rights reserved. | Enhanced Dashboard v2.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

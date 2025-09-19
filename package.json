@@ -1,0 +1,27 @@
+{
+  "name": "agthia-doa-dashboard-enhanced",
+  "version": "2.0.0",
+  "description": "Enhanced Agthia Group Delegation of Authority Dashboard with Segregated Thresholds and Collapsible Abbreviations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "agthia",
+    "delegation-of-authority",
+    "dashboard",
+    "corporate-governance",
+    "workflow",
+    "thresholds",
+    "enhanced"
+  ],
+  "author": "Agthia Group",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
